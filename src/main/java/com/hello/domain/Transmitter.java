@@ -1,18 +1,26 @@
 package com.hello.domain;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.TypeAlias;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
-import lombok.*;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
 @Document(collection = "transmitters")
+@TypeAlias("transmitter")
 public class Transmitter {
 
-//    @Id
+    @Id
+    @Field("id")
+    private String id;
+    
     @Field("transmitterId")
-    private int transmitterId;
+    private Long transmitterId;
 
     @Field("entityType")
     private String entityType;
@@ -21,51 +29,35 @@ public class Transmitter {
     private String alias;
     
     @Field("status")
-    private int status;
+    private Integer status;
     
-    @Field("simId")
-    private int simId;
+    @DBRef
+    @Field("sim")
+    private Sim sim;
     
-    @Field("modemId")
-    private int modemId;
-    
-    @Field("simStatus")
-    private int simStatus;
-    
-    @Field("modemStatus")
-    private int modemStatus;
+    @DBRef
+    @Field("modem")
+    private Modem modem;
 
-    
-	public Transmitter(int transmitterId, String entityType, String alias, int status, int simId, int modemId,
-			int simStatus, int modemStatus) {
+	public Transmitter(Long transmitterId, String entityType, String alias, Integer status, Sim sim, Modem modem) {
 		super();
 		this.transmitterId = transmitterId;
 		this.entityType = entityType;
 		this.alias = alias;
 		this.status = status;
-		this.simId = simId;
-		this.modemId = modemId;
-		this.simStatus = simStatus;
-		this.modemStatus = modemStatus;
+		this.sim = sim;
+		this.modem = modem;
 	}
-
-
-
-	public Transmitter(int transmitterId, String entityType, String alias, int status, int simId, int modemId) {
+	
+	public Transmitter() {
 		super();
-		this.transmitterId = transmitterId;
-		this.entityType = entityType;
-		this.alias = alias;
-		this.status = status;
-		this.simId = simId;
-		this.modemId = modemId;
 	}
 
-	public int getTransmitterId() {
+	public Long getTransmitterId() {
 		return transmitterId;
 	}
 
-	public void setTransmitterId(int transmitterId) {
+	public void setTransmitterId(Long transmitterId) {
 		this.transmitterId = transmitterId;
 	}
 
@@ -93,37 +85,24 @@ public class Transmitter {
 		this.status = status;
 	}
 
-	public int getSimId() {
-		return simId;
+	public Sim getSim() {
+		return sim;
 	}
 
-	public void setSimId(int simId) {
-		this.simId = simId;
+	public void setSim(Sim sim) {
+		this.sim = sim;
 	}
 
-	public int getModemId() {
-		return modemId;
+	public Modem getModem() {
+		return modem;
 	}
 
-	public void setModemId(int modemId) {
-		this.modemId = modemId;
+	public void setModem(Modem modem) {
+		this.modem = modem;
 	}
 
-	public int getSimStatus() {
-		return simStatus;
+	public void setStatus(Integer status) {
+		this.status = status;
 	}
-
-	public void setSimStatus(int simStatus) {
-		this.simStatus = simStatus;
-	}
-
-	public int getModemStatus() {
-		return modemStatus;
-	}
-
-	public void setModemStatus(int modemStatus) {
-		this.modemStatus = modemStatus;
-	}
-
-
+	
 }
