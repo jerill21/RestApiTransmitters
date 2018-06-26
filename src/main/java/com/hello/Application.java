@@ -5,8 +5,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.hello.domain.Hub;
-import com.hello.domain.HubRepository;
+import com.hello.domain.Transmitter;
+import com.hello.domain.TransmitterRepository;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -14,10 +14,10 @@ import lombok.extern.slf4j.Slf4j;
 @SpringBootApplication
 public class Application implements CommandLineRunner {
 
-    private HubRepository repository;
+    private TransmitterRepository repository;
 
     @Autowired
-    public void setRepository(HubRepository repository) {
+    public void setRepository(TransmitterRepository repository) {
         this.repository = repository;
     }
 

@@ -1,4 +1,4 @@
+com\hello\domain\TransmitterRepository.class
+com\hello\domain\Transmitter.class
+com\hello\web\TransmitterController.class
 com\hello\Application.class
-com\hello\domain\HubRepository.class
-com\hello\web\HubController.class
-com\hello\domain\Hub.class

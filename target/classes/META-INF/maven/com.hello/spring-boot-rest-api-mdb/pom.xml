@@ -52,10 +52,10 @@
         </dependency>
         
         <!-- Embedded MongoDB -->
-        <dependency>
-            <groupId>de.flapdoodle.embed</groupId>
-            <artifactId>de.flapdoodle.embed.mongo</artifactId>
-        </dependency>
+<!--         <dependency> -->
+<!--             <groupId>de.fClapdoodle.embed</groupId> -->
+<!--             <artifactId>de.flapdoodle.embed.mongo</artifactId> -->
+<!--         </dependency> -->
         
         <!-- reduce boilerplate code for model/data objects (e.g. generate getters/setters automatically)  -->
         <dependency>

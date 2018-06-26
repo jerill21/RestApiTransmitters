@@ -5,9 +5,13 @@ spring:
 # Database
   data:
     mongodb:
-      host: localhost
-      port: 27017
-      database: Hubs
+      uri: mongodb://acua-dev:7gEg8kzt6jKllxi4Nio34lRRnwLqWFGgHk5fQXHlKxhsQJ9axJPEClYuE5AzTlzLgxmulpYmfV7Ul1524NPcNg==@acua-dev.documents.azure.com:10255/acua-dev?ssl=true&replicaSet=globaldb
+#      host: acua-dev.documents.azure.com
+#      port: 10255
+#      database: acua-dev
+#      username: acua-dev
+#      password: 7gEg8kzt6jKllxi4Nio34lRRnwLqWFGgHk5fQXHlKxhsQJ9axJPEClYuE5AzTlzLgxmulpYmfV7Ul1524NPcNg==
+
 # Logging
 logging:
   pattern:
@@ -19,7 +23,6 @@ logging:
 # Server configuration
 server:
   port: 8082
-  sessionTimeout: 30
 # Security configuration
 security:
   user:

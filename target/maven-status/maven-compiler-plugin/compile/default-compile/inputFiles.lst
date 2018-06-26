@@ -1,4 +1,4 @@
 C:\Users\User\Desktop\ApiREST\ApiRestMongoDB\src\main\java\com\hello\Application.java
-C:\Users\User\Desktop\ApiREST\ApiRestMongoDB\src\main\java\com\hello\domain\HubRepository.java
-C:\Users\User\Desktop\ApiREST\ApiRestMongoDB\src\main\java\com\hello\web\HubController.java
-C:\Users\User\Desktop\ApiREST\ApiRestMongoDB\src\main\java\com\hello\domain\Hub.java
+C:\Users\User\Desktop\ApiREST\ApiRestMongoDB\src\main\java\com\hello\domain\TransmitterRepository.java
+C:\Users\User\Desktop\ApiREST\ApiRestMongoDB\src\main\java\com\hello\web\TransmitterController.java
+C:\Users\User\Desktop\ApiREST\ApiRestMongoDB\src\main\java\com\hello\domain\Transmitter.java
