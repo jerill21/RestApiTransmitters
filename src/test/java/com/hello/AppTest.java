@@ -86,9 +86,8 @@ public class AppTest {
 
     @Test
     public void test4_deleteAll() {
-    	
     	repository.deleteAll();
-    	
+    	assertTrue(repository.findAll().isEmpty());
     }
     
 }

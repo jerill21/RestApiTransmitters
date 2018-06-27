@@ -5,12 +5,7 @@ spring:
 # Database
   data:
     mongodb:
-      uri: mongodb://acua-dev:7gEg8kzt6jKllxi4Nio34lRRnwLqWFGgHk5fQXHlKxhsQJ9axJPEClYuE5AzTlzLgxmulpYmfV7Ul1524NPcNg==@acua-dev.documents.azure.com:10255/acua-dev?ssl=true&replicaSet=globaldb
-#      host: acua-dev.documents.azure.com
-#      port: 10255
-#      database: acua-dev
-#      username: acua-dev
-#      password: 7gEg8kzt6jKllxi4Nio34lRRnwLqWFGgHk5fQXHlKxhsQJ9axJPEClYuE5AzTlzLgxmulpYmfV7Ul1524NPcNg==
+      uri: ${URI_MONGODB}
 
 # Logging
 logging:
@@ -22,9 +17,10 @@ logging:
     org.mongodb: DEBUG
 # Server configuration
 server:
-  port: 8082
+  port: ${SERVER_PORT}
+
 # Security configuration
-security:
-  user:
-    name: user
-    password: user
+#security:
+#  user:
+#    name: user
+#    password: user
