@@ -15,6 +15,7 @@ import com.hello.domain.Sim;
 import com.hello.domain.SimRepository;
 import com.hello.domain.Transmitter;
 import com.hello.domain.TransmitterRepository;
+import com.utils.Constantes;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -54,7 +55,7 @@ public class TransmitterController {
 
     @RequestMapping(method = RequestMethod.GET)
     public List<Transmitter> findAllTransmitters() {
-        return repository.findAll();
+        return repository.findBy_class(Constantes.CLASS_TRANSMITTER);
     }
 
     @RequestMapping(

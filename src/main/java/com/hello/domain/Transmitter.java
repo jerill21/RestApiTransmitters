@@ -19,11 +19,11 @@ public class Transmitter {
     @Field("id")
     private String id;
     
+    @Field("_class")
+    private String _class;
+    
     @Field("transmitterId")
     private Long transmitterId;
-
-    @Field("entityType")
-    private String entityType;
 
     @Field("alias")
     private String alias;
@@ -38,15 +38,17 @@ public class Transmitter {
     @DBRef
     @Field("modem")
     private Modem modem;
-
-	public Transmitter(Long transmitterId, String entityType, String alias, Integer status, Sim sim, Modem modem) {
+    
+	public Transmitter(Long transmitterId, String alias, Integer status, Sim sim, Modem modem) {
 		super();
 		this.transmitterId = transmitterId;
-		this.entityType = entityType;
 		this.alias = alias;
 		this.status = status;
 		this.sim = sim;
 		this.modem = modem;
+	}
+	
+	public Transmitter() {
 	}
 	
 	public Long getTransmitterId() {
@@ -55,14 +57,6 @@ public class Transmitter {
 
 	public void setTransmitterId(Long transmitterId) {
 		this.transmitterId = transmitterId;
-	}
-
-	public String getEntityType() {
-		return entityType;
-	}
-
-	public void setEntityType(String entityType) {
-		this.entityType = entityType;
 	}
 
 	public String getAlias() {
@@ -97,4 +91,19 @@ public class Transmitter {
 		this.modem = modem;
 	}
 
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String get_class() {
+		return _class;
+	}
+
+	public void set_class(String _class) {
+		this._class = _class;
+	}
 }

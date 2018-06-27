@@ -24,6 +24,9 @@ public class Sim {
     @Field("simStatus")
     private Integer simStatus;
     
+    @Field("_class")
+    private String _class;
+    
 	public Sim(Long simId, Integer simStatus, String id) {
 		super();
 		this.id = id;
@@ -31,6 +34,8 @@ public class Sim {
 		this.simStatus = simStatus;
 	}
 
+	public Sim() {}
+	
 	public Long getSimId() {
 		return simId;
 	}
@@ -53,6 +58,14 @@ public class Sim {
 
 	public void setId(String id) {
 		this.id = id;
+	}
+
+	public String get_class() {
+		return _class;
+	}
+
+	public void set_class(String _class) {
+		this._class = _class;
 	}
 	
 }
