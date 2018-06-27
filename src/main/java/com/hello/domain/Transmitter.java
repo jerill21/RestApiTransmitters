@@ -46,6 +46,13 @@ public class Transmitter {
 		this.modem = modem;
 	}
 	
+	public Transmitter(Long transmitterId, String alias, Integer status) {
+		super();
+		this.transmitterId = transmitterId;
+		this.alias = alias;
+		this.status = status;
+	}
+	
 	public Transmitter() {
 	}
 	

@@ -31,6 +31,12 @@ public class Modem {
 		this.modemId = modemId;
 		this.modemStatus = modemStatus;
 	}
+	
+	public Modem(Long modemId, Integer modemStatus) {
+		super();
+		this.modemId = modemId;
+		this.modemStatus = modemStatus;
+	}
 
 	public Modem() {}
 	

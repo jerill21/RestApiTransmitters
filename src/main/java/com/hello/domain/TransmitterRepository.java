@@ -13,4 +13,8 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 public interface TransmitterRepository extends MongoRepository<Transmitter, Integer> {
 	
 	public List<Transmitter> findBy_class(String _class);
+	
+	public Transmitter findByTransmitterId(Long transmitterId);
+	
+	public void deleteByTransmitterId(Long transmitterId);
 }

@@ -31,6 +31,12 @@ public class Sim {
 		this.simId = simId;
 		this.simStatus = simStatus;
 	}
+	
+	public Sim(Long simId, Integer simStatus) {
+		super();
+		this.simId = simId;
+		this.simStatus = simStatus;
+	}
 
 	public Sim() {}
 	
