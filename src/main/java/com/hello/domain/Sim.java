@@ -31,10 +31,6 @@ public class Sim {
 		this.simStatus = simStatus;
 	}
 
-	public Sim() {
-		super();
-	}
-
 	public Long getSimId() {
 		return simId;
 	}
@@ -43,11 +39,11 @@ public class Sim {
 		this.simId = simId;
 	}
 	
-	public int getSimStatus() {
+	public Integer getSimStatus() {
 		return simStatus;
 	}
 
-	public void setSimStatus(int simStatus) {
+	public void setSimStatus(Integer simStatus) {
 		this.simStatus = simStatus;
 	}
 
@@ -57,10 +53,6 @@ public class Sim {
 
 	public void setId(String id) {
 		this.id = id;
-	}
-
-	public void setSimStatus(Integer simStatus) {
-		this.simStatus = simStatus;
 	}
 	
 }

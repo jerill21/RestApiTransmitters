@@ -49,10 +49,6 @@ public class Transmitter {
 		this.modem = modem;
 	}
 	
-	public Transmitter() {
-		super();
-	}
-
 	public Long getTransmitterId() {
 		return transmitterId;
 	}
@@ -77,11 +73,11 @@ public class Transmitter {
 		this.alias = alias;
 	}
 
-	public int getStatus() {
+	public Integer getStatus() {
 		return status;
 	}
 
-	public void setStatus(int status) {
+	public void setStatus(Integer status) {
 		this.status = status;
 	}
 
@@ -101,8 +97,4 @@ public class Transmitter {
 		this.modem = modem;
 	}
 
-	public void setStatus(Integer status) {
-		this.status = status;
-	}
-	
 }

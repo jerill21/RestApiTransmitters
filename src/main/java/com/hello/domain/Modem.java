@@ -24,10 +24,6 @@ public class Modem {
     @Field("modemStatus")
     private Integer modemStatus;
     
-	public Modem() {
-		super();
-	}
-
 	public Modem(String id, Long modemId, Integer modemStatus) {
 		super();
 		this.id = id;
@@ -43,11 +39,11 @@ public class Modem {
 		this.modemId = modemId;
 	}
 
-	public int getModemStatus() {
+	public Integer getModemStatus() {
 		return modemStatus;
 	}
 
-	public void setModemStatus(int modemStatus) {
+	public void setModemStatus(Integer modemStatus) {
 		this.modemStatus = modemStatus;
 	}
 
