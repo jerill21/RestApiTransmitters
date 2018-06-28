@@ -3,6 +3,7 @@ package com.hello.web;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,10 +18,7 @@ import com.hello.domain.Transmitter;
 import com.hello.domain.TransmitterRepository;
 import com.utils.Constantes;
 
-import lombok.extern.slf4j.Slf4j;
-
 @RestController
-@Slf4j
 @RequestMapping("/api/transmitters")
 public class TransmitterController {
 
@@ -43,6 +41,7 @@ public class TransmitterController {
         this.simRepository = repository;
     }
 
+    @CrossOrigin
     @RequestMapping(method = RequestMethod.POST)
     public void createTransmitter(@RequestBody Transmitter transmitter) {
 //    	Sim sim = repository.save(transmitter.getSim());
@@ -53,11 +52,13 @@ public class TransmitterController {
         repository.save(transmitter);
     }
 
+    @CrossOrigin
     @RequestMapping(method = RequestMethod.GET)
     public List<Transmitter> findAllTransmitters() {
         return repository.findBy_class(Constantes.CLASS_TRANSMITTER);
     }
 
+    @CrossOrigin
     @RequestMapping(
             method = RequestMethod.GET,
             value = "/{id}")
@@ -66,6 +67,7 @@ public class TransmitterController {
         return repository.findOne(id);
     }
 
+    @CrossOrigin
     @RequestMapping(
             method = RequestMethod.DELETE,
             value = "/{id}")
@@ -73,6 +75,7 @@ public class TransmitterController {
         repository.delete(id);
     }
 
+    @CrossOrigin
     @RequestMapping(method = RequestMethod.DELETE)
     public void deleteAllTransmitters() {
         repository.deleteAll();

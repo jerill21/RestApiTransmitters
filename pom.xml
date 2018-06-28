@@ -42,27 +42,11 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-<!--         <dependency> -->
-<!--             <groupId>org.springframework.boot</groupId> -->
-<!--             <artifactId>spring-boot-starter-security</artifactId> -->
-<!--         </dependency> -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
-        
-        <!-- Embedded MongoDB -->
-<!--         <dependency> -->
-<!--             <groupId>de.fClapdoodle.embed</groupId> -->
-<!--             <artifactId>de.flapdoodle.embed.mongo</artifactId> -->
-<!--         </dependency> -->
-        
         <!-- reduce boilerplate code for model/data objects (e.g. generate getters/setters automatically)  -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>		
-            <artifactId>lombok</artifactId>
-            <version>1.16.10</version>
-        </dependency>
     </dependencies>
 
     <build>
@@ -72,15 +56,6 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-<!--             Coveralls maven plugin -->
-<!--             <plugin> -->
-<!--                 <groupId>org.eluder.coveralls</groupId> -->
-<!--                 <artifactId>coveralls-maven-plugin</artifactId> -->
-<!--                 <version>4.2.0</version> -->
-<!--                 <configuration> -->
-<!--                     <repoToken>DMCQaZYS1rK70O1JJRGt23170KRXdJ3kS</repoToken> -->
-<!--                 </configuration> -->
-<!--             </plugin> -->
             <!-- JaCoCo maven plugin -->
             <plugin>
                 <groupId>org.jacoco</groupId>
