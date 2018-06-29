@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.hello.tests.AppTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.077 sec - in com.hello.tests.AppTest

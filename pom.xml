@@ -46,7 +46,18 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
-        <!-- reduce boilerplate code for model/data objects (e.g. generate getters/setters automatically)  -->
+        
+   		<!-- integration with Swagger API doc generation http://goo.gl/J5FQDM -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.5.0</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.5.0</version>
+		</dependency>
     </dependencies>
 
     <build>

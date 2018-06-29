@@ -1,9 +1,10 @@
-com\hello\domain\SimRepository.class
-com\hello\domain\TransmitterRepository.class
-com\hello\domain\Transmitter.class
-com\hello\domain\ModemRepository.class
-com\hello\domain\Sim.class
+com\hello\web\docs\SwaggerConfig.class
+com\hello\es\domain\Sim.class
+com\hello\es\domain\Modem.class
+com\hello\es\domain\ModemRepository.class
 com\hello\web\TransmitterController.class
 com\hello\Application.class
+com\hello\es\domain\Transmitter.class
 com\utils\Constantes.class
-com\hello\domain\Modem.class
+com\hello\es\domain\TransmitterRepository.class
+com\hello\es\domain\SimRepository.class
